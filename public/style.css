@@ -10,9 +10,9 @@ h1{
   clear: both;
 }
 #box{
-  width: 350px;
+  width: 75px;
   overflow: auto;
-  margin: 40px auto;
+  margin: 35px auto;
   background: #666;
   padding-bottom:40px;
   border-radius: 10px;
@@ -24,7 +24,7 @@ h1{
 #gameBoard li{
   float: left;
   margin:10px;
-  height:70px;
+  height:75px;
   width: 70px;
   font-size: 50px;
   background: #333;
