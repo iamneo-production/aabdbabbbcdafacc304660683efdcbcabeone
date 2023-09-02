@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tic Tac Toe</title>
-
-  <link rel="stylesheet" href="/html/style.css"> <!-- Make sure to provide the correct path to your CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe</title>
 </head>
 <body>
-  <h1>Tic Tac Toe</h1>
-
-  <div class="box-container">
-    <!-- Tic Tac Toe game board -->
-    <div class="box-row">
-      <input type="button" class="btn" readonly>
-      <input type="button" class="btn" readonly>
-      <input type="button" class="btn" readonly>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="box">
+            <div class="row">
+                <input type="text" class="btn" readonly>
+                <input type="text" class="btn" readonly>
+                <input type="text" class="btn" readonly>
+            </div>
+            <div class="row">
+                <input type="text" class="btn" readonly>
+                <input type="text" class="btn" readonly>
+                <input type="text" class="btn" readonly>
+            </div>
+            <div class="row">
+                <input type="text" class="btn" readonly>
+                <input type="text" class="btn" readonly>
+                <input type="text" class="btn" readonly>
+            </div>
+            <div class="result-container">
+                <p id="result">Player X's Turn</p>
+            </div>
+            <div class="reset-section">
+                <button id="resetButton" class="reset-btn" disabled>Reset</button>
+            </div>
+        </div>
     </div>
-    <div class="box-row">
-      <input type="button" class="btn" readonly>
-      <input type="button" class="btn" readonly>
-      <input type="button" class="btn" readonly>
-    </div>
-    <div class="box-row">
-      <input type="button" class="btn" readonly>
-      <input type="button" class="btn" readonly>
-      <input type="button" class="btn" readonly>
-    </div>
-  </div>
-
-  <div class="result-container">
-    <p class="result">Current player: X</p>
-  </div>
-
-  <div class="reset">
-    <button class="reset-button" id="reset">Reset</button>
-  </div>
-
-  <script src="/html/script.js"></script> <!-- Make sure to provide the correct path to your JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
