@@ -19,7 +19,30 @@ const ticTacToe = (element, index) => {
     // Your game logic here
 
     /*
-    **Part 1: Winning Conditions (Add your code here)**
+    **Part 1: Winning Conditionsconst checkWin = () => {
+  for (const condition of conditions) {
+    const [a, b, c] = condition;
+    if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c]) {
+      result.textContent = `Player ${currentPlayer} wins!`;
+      btns.forEach((btn) => btn.removeEventListener('click', handleClick));
+      return true;
+    }
+  }
+  return false;
+};
+
+const handleClick = (element, index) => {
+  if (cells[index] === '' && !checkWin()) {
+    cells[index] = currentPlayer;
+    element.textContent = currentPlayer;
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    result.textContent = `Current player: ${currentPlayer}`;
+  }
+};
+
+btns.forEach((btn, i) => {
+  btn.addEventListener('click', () => handleClick(btn, i));
+});
 
     1. Implement the logic to check for winning conditions using the 'conditions' array.
     2. Display a winning message in the 'result' element when a player wins.
@@ -37,7 +60,18 @@ const ticTacToe = (element, index) => {
 };
 
     /*
-    **Part 2: Reset Function (Add your code here)**
+    **Part 2: Reset Function const resetGame = () => {
+  cells = ['', '', '', '', '', '', '', '', ''];
+  currentPlayer = 'X';
+  result.textContent = 'Current player: X';
+  btns.forEach((btn, i) => {
+    btn.textContent = '';
+    btn.addEventListener('click', () => handleClick(btn, i));
+  });
+};
+
+document.querySelector('#reset').addEventListener('click', resetGame);
+
 
     1. Implement a new function that resets the game to its initial state.
     2. Ensure the 'cells', 'btns', and 'currentPlayer' variables are reset.
