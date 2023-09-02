@@ -1,19 +1,8 @@
-
-h1 {
+header h1 {
   text-align: center;
-}
-h1 {
-  color: #ffffff; 
-}
-
-/* Add a subtle text shadow for a lighter shadow effect */
-h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Horizontal and vertical offset, blur radius, and shadow color */
-}
-
-/* Set the font size to 50px for a prominent appearance */
-h1 {
+  color: #fff;
   font-size: 50px;
+  text-shadow: 1px 1px 1px #ccc;
 }
 .box-container {
   display: flex;
@@ -21,7 +10,6 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 35px;
-}
 }
 .box-row {
   display: flex;
@@ -39,4 +27,37 @@ h1 {
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
   text-shadow: 1px 1px 1px #fff;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+.btn:disabled {
+  color: #000;
+  cursor: no-drop;
+}
+.result-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #333;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+.result {
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 25px;
+  text-align: center;
+}
+.reset-btn {
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #000;
+  color: #fff;
 }
