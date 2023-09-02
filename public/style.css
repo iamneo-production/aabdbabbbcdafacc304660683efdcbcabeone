@@ -1,59 +1,17 @@
-body{
-  background: #212121;
-  color: #666;
-}
-h1{
+
+h1 {
   text-align: center;
-  color: #fff;
 }
-.clearfix{
-  clear: both;
+h1 {
+  color: #ffffff; 
 }
-#box{
-  width: 75px;
-  overflow: auto;
-  margin: 35px auto;
-  background: #666;
-  padding-bottom:40px;
-  border-radius: 10px;
+
+/* Add a subtle text shadow for a lighter shadow effect */
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Horizontal and vertical offset, blur radius, and shadow color */
 }
-#message{
-  background: #333;
-  color: #fff;
-}
-#gameBoard li{
-  float: left;
-  margin:10px;
-  height:75px;
-  width: 75px;
+
+/* Set the font size to 50px for a prominent appearance */
+h1 {
   font-size: 50px;
-  background: #333;
-  color: #ccc;
-  list-style: none;
-  text-align:center ;
-  border-radius:5px;
-}
-#gameBoard li:hover, #reset:hover{
-  cursor: pointer;
-  background: #000;
-}
-#reset{
-  border: 0;
-  background: #444;
-  color: #fff;
-  width: 75%;
-  padding: 15px;
-  text-align: center 200px;
-  border-radius: 5px;
-}
-.o{
-  color: green !important;
-}
-.x{
-  color:red !important;
-}
-footer{
-  display: block;
-  text-align:center;
-  padding-top:20px;
 }
