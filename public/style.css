@@ -31,5 +31,28 @@ h1{
   color: #ccc;
   list-style: none;
   text-align:center;
-  border-radius:
+  border-radius:5px;
+}
+#gameBoard li:hover, #reset:hover{
+  cursor: pointer;
+  background: #000;
+}
+#reset{
+  border: 0;
+  background: #444;
+  color: #fff;
+  width: 70%;
+  padding: 15px;
+  border-radius: 5px;
+}
+.o{
+  color: green !important;
+}
+.x{
+  color:red !important;
+}
+footer{
+  display: block;
+  text-align:center;
+  padding-top:20px;
 }
